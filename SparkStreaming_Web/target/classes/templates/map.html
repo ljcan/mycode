@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>高德地图</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+</head>
+<body>
+     <script src="js/echarts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.9&amp;key=d16808eab90b7545923a1c2f4bb659ef"></script>
+<div id="container"></div>
+
+<script>
+     var map = new AMap.Map("container", {
+         resizeEnable: true,
+         center: [116.418261, 39.921984],
+         zoom: 11
+     });
+ 
+     var heatmap;
+     var points =(function a(){  //<![CDATA[
+     	var city=[];
+    	$.ajax({
+    		type:"POST",
+    		url:"../get_map",
+    		dataType:'json',
+    		async:false,		//
+    		success:function(result){
+    			for(var i=0;i<result.length;i++){
+    				//alert("调用了");
+    				city.push({"lng":result[i].longitude,"lat":result[i].latitude,"count":result[i].count});
+    			}
+    			
+    		}
+    	})
+    	return city;
+    })();//]]>
+    	 
+    	 
+    /**	 
+    	 
+    	 
+    	 [
+         {"lng":116.191031,"lat":39.988585,"count":1000},
+         {"lng":116.389275,"lat":39.925818,"count":110},
+         {"lng":116.287444,"lat":39.810742,"count":1200},
+         {"lng":116.481707,"lat":39.940089,"count":130},
+         {"lng":116.410588,"lat":39.880172,"count":140},
+         {"lng":116.394816,"lat":39.91181,"count":15552},
+         {"lng":116.416002,"lat":39.952917,"count":16}
+        
+         
+     ];
+    **/
+    ;
+     map.plugin(["AMap.Heatmap"],function() {      //加载热力图插件
+         heatmap = new AMap.Heatmap(map,{
+        	 raduis:50,
+        	 opacity:[0,0.7]
+         });    //在地图对象叠加热力图
+         heatmap.setDataSet({data:points,max:100}); //设置热力图数据集
+         //具体参数见接口文档
+     }); 
+     
+// var map = new AMap.Map('container', {
+//    pitch:75, // 地图俯仰角度，有效范围 0 度- 83 度
+//    viewMode:'3D' // 地图模式
+//});
+</script>
+
+</body>
+</html>

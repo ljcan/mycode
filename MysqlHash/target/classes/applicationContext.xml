@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd 
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+     <!-- 配置资源文件 -->
+     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+     	<property name="location" value="classpath:db.properties"/>
+     </bean>
+     
+     <!-- 配置数据源 -->
+     <bean id="dataSource1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+     	<property name="driverClassName" value="${driver}"></property>
+     	<property name="url" value="${url1}"></property>
+     	<property name="username" value="${username}"></property>
+     	<property name="password" value="${pwd}"></property>
+     
+     </bean>
+        <bean id="dataSource2" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+     	<property name="driverClassName" value="${driver}"></property>
+     	<property name="url" value="${url2}"></property>
+     	<property name="username" value="${username}"></property>
+     	<property name="password" value="${pwd}"></property>
+    
+     </bean>
+        <bean id="dataSource3" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+     	<property name="driverClassName" value="${driver}"></property>
+     	<property name="url" value="${url3}"></property>
+     	<property name="username" value="${username}"></property>
+     	<property name="password" value="${pwd}"></property>
+    
+     </bean>
+        <bean id="dataSource4" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+     	<property name="driverClassName" value="${driver}"></property>
+     	<property name="url" value="${url4}"></property>
+     	<property name="username" value="${username}"></property>
+     	<property name="password" value="${pwd}"></property>
+    
+     </bean>
+         <bean id="dataSource5" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+     	<property name="driverClassName" value="${driver}"></property>
+     	<property name="url" value="${url5}"></property>
+     	<property name="username" value="${username}"></property>
+     	<property name="password" value="${pwd}"></property>
+     </bean>
+     
+    	<!-- 配置路由规则开始 -->
+	<!-- hash算法实现类 -->
+    <bean id="hashFunction" class="com.caland.core.dao.router.HashFunction"/>
+	<bean id="internalRouter"
+		class="com.caland.sun.client.router.config.InteralRouterXmlFactoryBean">
+		<!-- functionsMap是在使用自定义路由规则函数的时候使用 -->
+		<property name="functionsMap">
+			<map>
+				<entry key="hash" value-ref="hashFunction"></entry>
+			</map>
+	    </property>
+		<property name="configLocations">
+			<list>
+				<!-- 路由规则文件 -->
+				<value>classpath:/dbRule/sharding-rules-on-namespace.xml</value>
+			</list>
+		</property>
+	</bean>
+
+     
+     
+     
+     
+     <!-- 配置工厂 -->
+     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+     	<property name="dataSource" ref="dataSource"/>
+     	<property name="configLocation" value="classpath:mybatis.cfg.xml"/>
+     </bean>
+     <!-- 配置注解扫描器 -->
+     <context:component-scan base-package="cn.shinelon"/>
+</beans>

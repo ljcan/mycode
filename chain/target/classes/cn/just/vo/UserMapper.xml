@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.user">
+	<resultMap type="cn.just.vo.User" id="user">
+		<id column="id" property="id" />
+		<result column="username" property="username" />
+		<result column="pwd" property="pwd" />
+		<result column="email" property="email" />
+		<result column="email_code" property="email_code" />
+		<result column="invite_code" property="invite_code" />
+		<collection property="account" javaType="cn.just.vo.Account">
+			<id column="a_id" property="a_id" />
+			<result column="a_address" property="a_address" />
+			<result column="a_user_id" property="a_user_id" />
+		</collection>
+	</resultMap>
+	<insert id="insert" parameterType="cn.just.vo.User">
+		insert into user values(#{id},#{username},#{pwd},#{email})
+	</insert>
+	<select id="selectPwd" resultType="cn.just.vo.User">
+		select * from user where username=#{username}
+	</select>
+	<select id="selectId" resultType="cn.just.vo.User">
+		select * from user where username=#{username}
+	</select>
+</mapper>

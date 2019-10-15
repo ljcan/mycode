@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.just.dubbo</groupId>
+    <artifactId>Spring-Dubbo-Parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>cn.just.dubbo</groupId>
+  <artifactId>Spring-Dubbo-Mgrsite</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <dependencies>
+  	<dependency>
+  		<groupId>cn.just.dubbo</groupId>
+  		<artifactId>Spring-Dubbo-api</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  
+  	<dependency>  
+            <groupId>com.alibaba</groupId>  
+            <artifactId>dubbo</artifactId>  
+            <version>2.5.3</version>  
+    </dependency>  
+    
+    <dependency>  
+		<groupId>org.springframework</groupId>  
+		<artifactId>spring-context</artifactId>  
+		<version>4.1.6.RELEASE</version>  
+	</dependency>  
+	<!-- zookeeper -->
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.5</version>
+		</dependency>
+  </dependencies>
+</project>

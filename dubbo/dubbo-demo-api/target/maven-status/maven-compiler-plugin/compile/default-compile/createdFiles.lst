@@ -1,0 +1,3 @@
+org\dubbo\demo\api\HelloWorld.class
+cn\just\service\HelloWorldService.class
+org\dubbo\demo\api\App.class

@@ -1,0 +1,16 @@
+/*
+* @Author: YP
+* @Date:   2018-03-13 08:45:36
+* @Last Modified by:   YP
+* @Last Modified time: 2018-03-13 08:54:23
+*/
+html,a,ul,li
+{
+	padding: 0;
+	margin: 0;
+	border:0;
+}
+a
+{
+	text-decoration: none;
+}

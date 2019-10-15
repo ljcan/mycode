@@ -1,0 +1,25 @@
+springboot项目的打包处理
+	1.springboot项目的打包发布只需要安装插件，然后maven命令进行打包处理就可以了。
+	在父项目的pom文件中加入springboot打包的插件
+	<build>
+		<finalName>microboot</finalName>
+		<plugins><!-- springboot项目打包处理的插件 -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration><!-- 设置程序执行的主类 -->
+					<mainClass>cn.microboot.base.StartSpringBootMain</mainClass>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	2.然后运行maven命令clean package就可以打包处理了。
+	然后打开项目所在的路径下就可以看到打包好的jar，然后在命令行 中打开通过java -jar xxx.jar命令就可以启动服务
+	器，然后轻松通过浏览器中访问，也可以打包发布到Linux下，通过相同的方式运行并且访问。

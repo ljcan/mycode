@@ -1,0 +1,61 @@
+Springboot集成JPA
+
+1.在pom文件中导入相关依赖
+  	<!-- springboot集成jpa -->
+	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-jpa</artifactId>
+		<version>1.5.6.RELEASE</version>
+	</dependency>
+	<dependency>
+		<!-- springboot集成jdbc的依赖 -->
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+	</dependency>
+
+2.加入资源文件application.properties
+spring.datasource.url=jdbc:mysql://localhost:3306/study
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+3.编写实体类（注意注释）
+① @Entity(name="user")
+public class User {
+	@Id
+	//必须加这个注释
+	@GeneratedValue
+	private int id;
+	@Column
+	private String username;
+	@Column
+	private String pwd;
+	@Column
+	private String roles;
+	//......
+}
+② 编写DAO层
+public interface UserDao extends JpaRepository<User, Integer>{
+
+}
+注意：上面的代码必须继承JpaRepository
+③ 编写controller层
+@RestController
+@SpringBootApplication
+@EntityScan(basePackages="cn.shinelon.vo")
+@EnableJpaRepositories(basePackages="cn.shinelon.dao")
+public class UserController {
+	@Autowired
+	private UserDao userDao;
+	@RequestMapping("/index")
+	public String select(int id) {
+		return userDao.findOne(id).toString();
+	}
+	public static void main(String[] args) {
+		SpringApplication.run(UserController.class, args);
+	}
+}
+注意：上面的注释在扫描DAO层的时候用注释@EnableJpaRepositories(basePackages="cn.shinelon.dao")
+	  扫描实体类的时候是org.springframework.boot.autoconfigure.domain.EntityScan;
+

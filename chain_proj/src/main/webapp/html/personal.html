@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>personal</title>
+    <!--直接跳到交易记录-->
+</head>
+                                                             <!---->
+<body>
+	<div id="nav">
+            <a href="main.html">首页</a>
+            <a href="trade.html">交易中心</a>
+            <a href="shopping">商城</a>
+            <a href="personal.html">个人中心</a>
+            <a href="login.html">登录/注册</a>
+        </div>
+    <div id="personal">
+        <div id="left">
+            <div id="personalMessage">
+                <img id="personalPicture" src="../static/image/touxiang.png">
+                </img>
+                <span id="account">1477311729</span><span>欢迎您</span><!--账号从数据库读出来-->
+            </div>
+            <div id="function">
+                <a href="wallet.html">我的钱包</a>
+                <ul>
+                    <li>交易记录</li>
+                    <li>修改登录密码</li>
+                    <li>我的二维码</li>
+                    <li>维权中心</li>
+                </ul>
+            </div>
+        </div>
+        <div id="right">
+        	<div id="tradeRecord">
+        		
+        		<!--交易记录是从区块链读出来的，然后下面li里面的id是交易的hash值，这个hash值你应该存在数据库里面-->
+        		<ul>
+        			<span id="searchBar"></span><!--通过-->
+        			<!--这些记录是通过你数据库的交易记录拿出来的，所以你应该把用户名和它的交易记录对应起来-->
+        			<li id="0Xe269e6293">0Xe269e62936e2963293663afe    +1000coin      18.3.13</li>
+        			<li id="0Xe26934293">0Xe269e62936e2963293663afe    +1000coin      18.3.13</li>
+        		
+        		
+           		</ul>
+
+        	</div>
+        	<div id="changePassword">
+        		<span>请输入原密码</span><input type="password">
+        		<span>请输入新密码</span><input type="password">
+        		<span>请再次输入新密码</span><input type="password">
+        	</div>
+			<div id="erWeiMa"><!--这里上传二维码，支付宝微信，，但是如何判断这个人是不是已经上传了呢-->
+				
+			</div>
+        	<div id="protectRight">
+        		<h1>如果您被欺骗了，请上传交易截图</h1>
+        		<span>请上传交易截图</span><input type="file" name="从本地选择"/>
+        	</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+[INFO][2018-03-16 20:06:36,685][com.alibaba.dubbo.common.logger.LoggerFactory]using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[ERROR][2018-03-16 20:06:37,140][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/common/Version.class in 2 jar [file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/common/Version.class, file:/E:/STS/dubbo/dubbo-demo-server/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/common/Version.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[INFO][2018-03-16 20:06:37,407][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service cn.just.service.HelloWorldService to local registry, dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[INFO][2018-03-16 20:06:37,409][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Export dubbo service cn.just.service.HelloWorldService to url dubbo://172.29.63.133:20880/cn.just.service.HelloWorldService?anyhost=true&application=helloWorld&dubbo=0.0.1-SNAPSHOT-jar-with-dependencies&interface=cn.just.service.HelloWorldService&methods=helloworld&pid=10284&revision=0.0.1-SNAPSHOT-jar-with-dependencies&side=provider&timestamp=1521201997206, dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[INFO][2018-03-16 20:06:37,410][com.alibaba.dubbo.config.AbstractConfig] [DUBBO] Register dubbo service cn.just.service.HelloWorldService url dubbo://172.29.63.133:20880/cn.just.service.HelloWorldService?anyhost=true&application=helloWorld&dubbo=0.0.1-SNAPSHOT-jar-with-dependencies&interface=cn.just.service.HelloWorldService&methods=helloworld&pid=10284&revision=0.0.1-SNAPSHOT-jar-with-dependencies&side=provider&timestamp=1521201997206 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=helloWorld&dubbo=0.0.1-SNAPSHOT-jar-with-dependencies&pid=10284&registry=zookeeper&timestamp=1521201997141, dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[ERROR][2018-03-16 20:06:37,465][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/remoting/exchange/Exchangers.class in 2 jar [file:/E:/STS/dubbo/dubbo-demo-server/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/remoting/exchange/Exchangers.class, file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/remoting/exchange/Exchangers.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[ERROR][2018-03-16 20:06:37,481][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/remoting/Transporters.class in 2 jar [file:/E:/STS/dubbo/dubbo-demo-server/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/remoting/Transporters.class, file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/remoting/Transporters.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[ERROR][2018-03-16 20:06:37,482][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/remoting/RemotingException.class in 2 jar [file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/remoting/RemotingException.class, file:/E:/STS/dubbo/dubbo-demo-server/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/remoting/RemotingException.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[INFO][2018-03-16 20:06:38,582][com.alibaba.dubbo.remoting.transport.AbstractServer] [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /172.29.63.133:20880, dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[INFO][2018-03-16 20:06:38,640][org.I0Itec.zkclient.ZkEventThread]Starting ZkClient event thread.
+[INFO][2018-03-16 20:06:38,669][org.apache.zookeeper.ZooKeeper]Client environment:zookeeper.version=3.4.5-1392090, built on 09/30/2012 17:52 GMT
+[INFO][2018-03-16 20:06:38,669][org.apache.zookeeper.ZooKeeper]Client environment:host.name=DESKTOP-1JQ2M5H
+[INFO][2018-03-16 20:06:38,670][org.apache.zookeeper.ZooKeeper]Client environment:java.version=1.8.0_121
+[INFO][2018-03-16 20:06:38,670][org.apache.zookeeper.ZooKeeper]Client environment:java.vendor=Oracle Corporation
+[INFO][2018-03-16 20:06:38,670][org.apache.zookeeper.ZooKeeper]Client environment:java.home=C:\Program Files\Java\jre1.8.0_121
+[INFO][2018-03-16 20:06:38,671][org.apache.zookeeper.ZooKeeper]Client environment:java.class.path=C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\cldrdata.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\dnsns.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\jaccess.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\jfxrt.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\localedata.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\nashorn.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\sunec.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\sunmscapi.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jre1.8.0_121\lib\ext\zipfs.jar;E:\STS\dubbo\dubbo-demo-server\target\classes;E:\STS\dubbo\dubbo-demo-server\lib\dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar;E:\STS\dubbo\dubbo-demo-server\lib\dubbo-demo-api-0.0.1-SNAPSHOT.jar;C:\Users\Shinelon\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Shinelon\.m2\repository\com\alibaba\dubbo\2.5.3\dubbo-2.5.3.jar;C:\Users\Shinelon\.m2\repository\org\springframework\spring\2.5.6.SEC03\spring-2.5.6.SEC03.jar;C:\Users\Shinelon\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Shinelon\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\Shinelon\.m2\repository\org\jboss\netty\netty\3.2.5.Final\netty-3.2.5.Final.jar;C:\Users\Shinelon\.m2\repository\com\101tec\zkclient\0.2\zkclient-0.2.jar;C:\Users\Shinelon\.m2\repository\org\apache\zookeeper\zookeeper\3.4.5\zookeeper-3.4.5.jar;C:\Users\Shinelon\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\Shinelon\.m2\repository\org\slf4j\slf4j-log4j12\1.6.1\slf4j-log4j12-1.6.1.jar;C:\Users\Shinelon\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar
+[INFO][2018-03-16 20:06:38,671][org.apache.zookeeper.ZooKeeper]Client environment:java.library.path=C:\Program Files\Java\jre1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_121\bin;F:\常用软件\eclipse-jee-neon-2-win32-x86_64\eclipse\android-sdk_r24.4.1-windows\android-sdk-windows\tools;C:\program Files (x86)\MySQL\MySQL Server 5.5\bin;E:\AndroidStudio\tools;E:\AndroidStudio\platform-tools;E:\python2.7.9;E:\python2.7.9\scripts;F:\apache-maven-3.5.0-bin\apache-maven-3.5.0\bin;E:\Git\cmd;E:\scala\bin;%SCALA_HOME%\bin;%SCALA_HOME%\jre\bin;E:\node\;C:\Users\Shinelon\AppData\Roaming\npm;E:\altera\modelsim_ase\win32aloem;F:\spring-tool-suite-3.9.1.RELEASE-e4.7.1a-win32-x86_64\sts-bundle\sts-3.9.1.RELEASE;;.
+[INFO][2018-03-16 20:06:38,672][org.apache.zookeeper.ZooKeeper]Client environment:java.io.tmpdir=C:\Users\Shinelon\AppData\Local\Temp\
+[INFO][2018-03-16 20:06:38,672][org.apache.zookeeper.ZooKeeper]Client environment:java.compiler=<NA>
+[INFO][2018-03-16 20:06:38,673][org.apache.zookeeper.ZooKeeper]Client environment:os.name=Windows 10
+[INFO][2018-03-16 20:06:38,674][org.apache.zookeeper.ZooKeeper]Client environment:os.arch=amd64
+[INFO][2018-03-16 20:06:38,674][org.apache.zookeeper.ZooKeeper]Client environment:os.version=10.0
+[INFO][2018-03-16 20:06:38,674][org.apache.zookeeper.ZooKeeper]Client environment:user.name=Shinelon
+[INFO][2018-03-16 20:06:38,675][org.apache.zookeeper.ZooKeeper]Client environment:user.home=C:\Users\Shinelon
+[INFO][2018-03-16 20:06:38,675][org.apache.zookeeper.ZooKeeper]Client environment:user.dir=E:\STS\dubbo\dubbo-demo-server
+[INFO][2018-03-16 20:06:38,677][org.apache.zookeeper.ZooKeeper]Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@36f0f1be
+[INFO][2018-03-16 20:06:38,707][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:39,713][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:40,827][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:41,830][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:42,931][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:43,934][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:45,035][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:46,037][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:47,139][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:48,139][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:49,241][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:50,245][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:51,346][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:52,348][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:53,449][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:54,452][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:55,553][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:56,562][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:57,663][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:06:58,672][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:06:59,773][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:00,776][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:01,877][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:02,879][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:03,981][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:04,983][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:06,085][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:07,086][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:08,188][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:09,190][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:10,292][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:11,293][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:12,394][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:13,398][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:14,500][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:15,503][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:16,604][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:17,607][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:18,709][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:19,710][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:20,812][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN][2018-03-16 20:07:21,815][org.apache.zookeeper.ClientCnxn]Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(Unknown Source)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1068)
+[INFO][2018-03-16 20:07:22,917][org.apache.zookeeper.ClientCnxn]Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[ERROR][2018-03-16 20:10:06,543][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/common/Version.class in 2 jar [file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/common/Version.class, file:/E:/STS/dubbo/dubbo-demo-server/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/common/Version.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[ERROR][2018-03-16 20:10:06,889][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/remoting/exchange/Exchangers.class in 2 jar [file:/E:/STS/dubbo/dubbo-demo-server/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/remoting/exchange/Exchangers.class, file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/remoting/exchange/Exchangers.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[ERROR][2018-03-16 20:10:06,910][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/remoting/Transporters.class in 2 jar [file:/E:/STS/dubbo/dubbo-demo-server/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/remoting/Transporters.class, file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/remoting/Transporters.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[ERROR][2018-03-16 20:10:06,911][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/remoting/RemotingException.class in 2 jar [file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/remoting/RemotingException.class, file:/E:/STS/dubbo/dubbo-demo-server/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/remoting/RemotingException.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[ERROR][2018-03-16 20:10:58,126][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/common/Version.class in 2 jar [file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/common/Version.class, file:/E:/STS/dubbo/dubbo-demo-client/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/common/Version.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 127.0.0.1
+[ERROR][2018-03-16 20:10:59,857][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/remoting/exchange/Exchangers.class in 2 jar [file:/E:/STS/dubbo/dubbo-demo-client/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/remoting/exchange/Exchangers.class, file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/remoting/exchange/Exchangers.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 172.29.63.133
+[ERROR][2018-03-16 20:10:59,873][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/remoting/Transporters.class in 2 jar [file:/E:/STS/dubbo/dubbo-demo-client/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/remoting/Transporters.class, file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/remoting/Transporters.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 172.29.63.133
+[ERROR][2018-03-16 20:10:59,874][com.alibaba.dubbo.common.Version] [DUBBO] Duplicate class com/alibaba/dubbo/remoting/RemotingException.class in 2 jar [file:/C:/Users/Shinelon/.m2/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar!/com/alibaba/dubbo/remoting/RemotingException.class, file:/E:/STS/dubbo/dubbo-demo-client/lib/dubbo-demo-api-0.0.1-SNAPSHOT-jar-with-dependencies.jar!/com/alibaba/dubbo/remoting/RemotingException.class], dubbo version: 0.0.1-SNAPSHOT-jar-with-dependencies, current host: 172.29.63.133

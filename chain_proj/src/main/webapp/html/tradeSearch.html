@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+	<div id="nav">
+            <a href="main.html">首页</a>
+            <a href="trade.html">交易中心</a>
+            <a href="shopping">商城</a>
+            <a href="personal.html">个人中心</a>
+            <a href="login.html">登录/注册</a>
+        </div>
+    <div main_content>
+        <div id="searchByTransctionHash">
+            <!--通过交易的hash查询-->
+            <form>
+                <input type="text" name="tradeHash" placeholder="交易对应的hash值" />
+                <button>查询</button>
+            </form>
+        </div>
+        <div id="showBox">
+            <!--搜索之后要弹出来的框-->
+            <li>
+                <span id="amunt">12000</span>coin 这是数量，我从区块链读
+            </li>
+            <li>
+                <span id="form">0Xe269e62936e2963293663afe</span>> 发起方，我从区块链读
+            </li>
+            <li>
+                <span id="to">0Xe269e62936e2963293663afe</span> 接收方，我从区块链读
+            </li>
+            <li>
+                <span id="blockNumber">0Xe269e62936e2963293663afe</span> 区块号码，我从区块链读
+            </li>
+            <li>
+                <span id="status">确认中</span>
+            </li>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+springboot静态资源的访问，如js，HTML，css,图片等
+
+Springboot默认静态资源目录位于classpath下
+/static
+/public 
+/resources
+/WEB-INF/resources

@@ -1,0 +1,61 @@
+1.首先在pom文件中加入两个依赖
+	<!-- springboot集成mybatis -->
+	<!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
+	<dependency>
+		<groupId>org.mybatis.spring.boot</groupId>
+		<artifactId>mybatis-spring-boot-starter</artifactId>
+		<version>1.3.0</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+	</dependency>
+
+2.在application.properties加入数据源
+spring.datasource.url=jdbc:mysql://localhost:3306/study
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+	
+	
+3.建立mapper层，这里使用注解开发
+	import cn.shinelon.vo.User;
+public interface UserMapper {
+	@Select("select * from user where id=#{id}")
+	public User findname(int id);
+}
+
+
+4.建立实体类
+public class User {
+	private int id;
+	private String username;
+	private String pwd;
+	private String roles;
+	。。。。。
+	}
+
+5.在controller层调用
+@SpringBootApplication
+@Controller
+//扫描mapper层
+@MapperScan("cn.shinelon.mapper")
+
+public class IndexController {
+	@RequestMapping("/index")
+	public String index() {
+		return "index";
+	}
+	
+	@Autowired
+	private UserMapper userMapper;
+	@ResponseBody
+	@RequestMapping("/select")
+	public User select(int id) {
+		return userMapper.findname(id);
+	}
+	。。。。。。
+	}
+	

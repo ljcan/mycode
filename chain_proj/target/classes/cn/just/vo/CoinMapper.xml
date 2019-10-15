@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis">
+	<resultMap type="cn.just.vo.Coin" id="coin">
+			<id column="c_id" property="c_id" />
+			<result column="c_money" property="c_money" />
+			<result column="c_account_id" property="c_account_id" />
+			<association property="account" javaType="cn.just.vo.Account">
+				<id column="a_id" property="a_id" />
+				<result column="a_address" property="a_address" />
+				<result column="a_user_id" property="a_user_id" />
+			</association>
+	</resultMap>
+
+
+	
+</mapper>

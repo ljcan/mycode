@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signUp</title>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+	<script type="text/javascript">
+		function verify(){
+			if(document.getById("username")==null){
+				alert("用户名不能为空");
+			}
+		}
+	
+	</script>
+</head>
+<body> 
+	<div id="nav">
+            <a href="main.html">首页</a>
+            <a href="trade.html">交易中心</a>
+            <a href="shopping">商城</a>
+            <a href="personal.html">个人中心</a>
+            <a href="login.html">登录/注册</a>
+        </div>
+	<div id="signUp">
+          <form action="../user/register.spring" method="post">
+          	<input type="text" name="username" id="username" placeholder="用户名"/>
+          	<input type="text" name="email" id="email" placeholder="邮箱" />
+          	<input type="password" name="pwd" id="password" placeholder="密码" />
+          	<input type="confirmPassword" id="confirmPassword" placeholder="确认密码" />
+          	<input type="text" name="email_code" id="email_verify" placeholder="邮箱验证码" />
+          	<input type="text" name="invite_code" id="inviteCode" placeholder="邀请码(选填)" />
+          	<button>立即注册</button>
+          	<input type="submit" value="登录"/>
+          </form>
+	</div>
+</body>
+</html>

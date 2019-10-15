@@ -1,0 +1,29 @@
+springboot使用freemarker模板引擎
+1.在pom文件中引入springboot专用的模板引擎
+<!-- 使用freemarker模板引擎来渲染前端画面 -->
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-freemarker -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-freemarker</artifactId>
+</dependency>
+2.后台
+@Controller
+public class FreeMarkerController {
+	@RequestMapping("/index")
+	public String index(ModelMap model) {
+		model.addAttribute("name", "shinelon");
+		return "index";
+	}
+
+}
+3.前台   index.ftl    //ftl文件会自动转换为html文件，而jsp文件底层是servlet
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	${name}
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis">
+  <select id="selectByUsername" resultType="cn.shinelon.vo.User">
+	select * from user where username=#{username}
+  </select>
+  <!-- 
+  <select id="userSelect" resultType="cn.shinelon.vo.User">
+  	select * from user
+  </select>
+  <insert id="userInsert" parameterType="cn.shinelon.vo.User">
+   insert into user values(#{id},#{username},#{pwd})
+  </insert>
+  <delete id="userDelete" parameterType="int">
+  delete from user where id=#{id}
+  </delete>
+  <update id="userUpdate" parameterType="cn.shinelon.vo.User">
+  update user set username=#{username},pwd=#{pwd} where id=#{id}
+  </update>
+   -->
+</mapper>

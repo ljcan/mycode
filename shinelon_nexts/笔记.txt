@@ -1,0 +1,14 @@
+springsecurity拦截器
+
+UsernamePasswordAuthenticationFilter->BasicAuthenticationFilter...
+->ExceptionTranslationFilter->FilterSecutiryInteceptor
+
+
+
+SpringSecurity基于表单的开发认证
+
+
+注意Spring Security中当你第一次登陆验证成功后，它就会放入缓存中
+
+猜测：Spring Security中可能有一个标识符验证密码是否正确
+密码错误它不会通过UsernamePasswordAuthticationFilter拦截器，这个拦截器中就有一个标识

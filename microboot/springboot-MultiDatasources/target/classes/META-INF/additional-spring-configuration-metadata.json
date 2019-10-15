@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "spring.datasource.test2.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test2.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.test2.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test2.url'"
+  },
+  {
+    "name": "spring.datasource.test2.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test2.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.test2.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test2.username'"
+  },
+  {
+    "name": "spring.datasource.test2.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test2.password'"
+  },
+  {
+    "name": "spring.datasource.test1.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test1.password'"
+  },
+  {
+    "name": "spring.datasource.test1.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test1.username'"
+  },
+  {
+    "name": "spring.datasource.test1.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test1.url'"
+  },
+  {
+    "name": "spring.datasource.test1.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test1.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.test1.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.test1.driverClassName'"
+  }
+]}

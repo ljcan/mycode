@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/require.js"></script> 
+<script type="text/javascript" src="http://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script> 
+<script type="text/javascript">
+var url='hello.spring';
+//var socket=new WebSocket(url);
+var socket=new SockJS(url);
+socket.onopen=function(){
+	console.log('Opening');
+	sayHello();
+};
+//处理消息
+socket.onmessage=function(e){
+	console.log('Received message:',e.data);
+	setTimeout(function(){sayHello()},2000);
+};
+//处理关闭事件
+socket.onclose=function(){
+	console.log('Closing');
+};
+function sayHello(){
+	console.log('Sending hello');
+	//发送消息
+	socket.send('Hello');
+}
+</script>
+</head>
+<body>
+	WebSocket
+</body>
+</html>
